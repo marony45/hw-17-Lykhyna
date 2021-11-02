@@ -1,17 +1,82 @@
 .cases {
   &__wrapper {
+    margin-top: 77px;
     .container {
       padding: 0;
     }
   }
   &__top {
     background: $lightgrey;
+    border-radius: 15px 15px 0 0;
     &__item {
       height: 255px;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
-      padding: 0 40px;
+      padding: 0 120px 0 20px;
+      border-bottom: 2px solid white;
+      border-right: 2px solid white;
+      &:first-child {
+        padding-left: 30px;
+        position: relative;
+        &::after {
+          content: 'Успішні кейси';
+          text-transform: uppercase;
+          font-size: 12px;
+          font-weight: bold;
+          width: 150px;
+          height: 40px;
+          color: $lightred;
+          position: absolute;
+          top: 20px;
+          left: 30px;
+        }
+        &::before {
+          content: '';
+          width: 100%;
+          height: 2px;
+          background-color: $white;
+          position: absolute;
+          top: 55px;
+          left: 0px;
+        }
+      }
+      h5 {
+        padding-bottom: 20px;
+        font-size: 18px;
+        word-break: keep-all;
+        color: $semidarkgrey;
+      }
+      p {
+        color: $semilightgrey;
+        font-size: 16px;
+      }
+    }
+  }
+  &__bot {
+    background: $lightgrey;
+    border-radius: 0 0 15px 15px;
+    &__item {
+      height: 197px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 0 120px 0 20px;
+      border-bottom: 2px solid white;
+      border-right: 2px solid white;
+      &:first-child {
+        padding-left: 30px;
+      }
+      h5 {
+        padding-bottom: 20px;
+        font-size: 18px;
+        word-break: keep-all;
+        color: $semidarkgrey;
+      }
+      p {
+        color: $semilightgrey;
+        font-size: 16px;
+      }
     }
   }
 }

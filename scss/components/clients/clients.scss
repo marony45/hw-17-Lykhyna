@@ -1,0 +1,19 @@
+.clients {
+  &__wrapper {
+    margin-top: 35px;
+  }
+  h6 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    margin: 0 0 30px;
+  }
+  .row {
+    div {
+      padding: 0;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
