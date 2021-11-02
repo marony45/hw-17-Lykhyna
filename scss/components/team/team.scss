@@ -1,0 +1,54 @@
+.team {
+  &__wrapper {
+    padding-top: 60px;
+    .container {
+      background: $lightgrey;
+      padding: 0;
+      border-radius: 0 15px 15px 0;
+    }
+  }
+  .carousel-caption {
+    top: 50px;
+    left: 35%;
+    a, h5, h6, p{
+      text-align: left;
+    }
+    a {
+      text-transform: uppercase;
+      display: block;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    h5 {
+      font-size: 30px;
+      font-weight: bold;
+      color: transparent;
+      background: linear-gradient(to right, $lightred, #ee797d);
+      -webkit-background-clip: text;
+      line-height: 40px;
+    }
+    h6 {
+      color: $grey;
+      margin: 20px 0 5px;
+    }
+    p {
+      color: $semilightgrey;
+      font-size: 14px;
+    }
+  }
+  .carousel-indicators {
+    bottom: -65px;
+    button {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: $blue;
+    }
+  }
+  .carousel-control-prev-icon {
+    display: none;
+  }
+  .carousel-control-next-icon {
+    display: none;
+  }
+}

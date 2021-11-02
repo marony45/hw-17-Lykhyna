@@ -1,0 +1,17 @@
+.cases {
+  &__wrapper {
+    .container {
+      padding: 0;
+    }
+  }
+  &__top {
+    background: $lightgrey;
+    &__item {
+      height: 255px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 0 40px;
+    }
+  }
+}

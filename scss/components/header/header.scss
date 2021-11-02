@@ -1,0 +1,49 @@
+header {
+  padding-top: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background: transparent;
+}
+.language {
+  a {
+    font-weight: bold;
+    color: $white;
+    padding: 0 5px;
+    &:hover {
+      background-color: $lightred;
+      border-radius: 10px;
+      transition: .3s;
+    }
+  }
+  address {
+    color: $white;
+    li {
+      padding: 0 5px;
+      &:nth-child(2) {
+        font-weight: bold;
+      }
+    }
+  }
+}
+nav {
+  margin-top: 10px;
+  li{
+    a {
+      margin: 0 10px;
+      font-weight: bold;
+      border-bottom: 2px solid transparent;
+      color: $white;
+      &:last-child {
+        margin: 0;
+      }
+      &:hover {
+        color: $lightred;
+        border-bottom: 2px solid $lightred;
+        transition: .5s;
+      }
+    }
+  }
+}

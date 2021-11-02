@@ -1,0 +1,76 @@
+.services {
+  padding-bottom: 80px;
+  &__wrapper {
+    padding-top: 75px;
+    background: radial-gradient(ellipse farthest-side at -10% 125%, rgba(2,0,36,1) 0%, rgba(122,66,94,1) 0%, rgba(50,50,100,1) 100%);
+    border-radius: 0 0 25px 25px;
+    &:after {
+      content: '';
+      width: 100%;
+      background: url("./../images/csl.png") no-repeat top left, url("./../images/csr.png") no-repeat top right, url("./../images/csm.png") repeat-x;
+      height: 20px;
+      position: absolute;
+    }
+  }
+  li {
+    list-style: none;
+    text-align: right;
+    border-right: 5px solid $white;
+    padding: 6px 40px 5px 0;
+    font-size: 36px;
+    color: $grey;
+    font-weight: bold;
+    background: linear-gradient(to right, #ee797d, $lightred);
+    -webkit-background-clip: text;
+    &:hover {
+      border-right: 5px solid $lightred;
+      color: transparent;
+      transition: .5s;
+    }
+    &:last-child {
+      max-width: 400px;
+    }
+  }
+  &__text {
+    max-width: 630px;
+    h4 {
+      color: $white;
+      margin-top: 20px;
+      font-size: 30px;
+    }
+    p {
+      color: $white;
+      margin-top: 15px;
+      font-size: 20px;
+    }
+  }
+  &__title {
+    padding-top: 80px;
+    a {
+      text-transform: uppercase;
+      color: $grey;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    h3 {
+      font-size: 38px;
+      color: transparent;
+      background: linear-gradient(to right, $lightred, #ee797d);
+      -webkit-background-clip: text;
+      font-weight: bold;
+    }
+  }
+  &__item {
+    margin-top: 60px;
+    img {
+      padding-bottom: 20px;
+    }
+    h4 {
+      color: $blue;
+    }
+    p {
+      color: $white;
+      margin-top: 20px;
+    }
+  }
+}
