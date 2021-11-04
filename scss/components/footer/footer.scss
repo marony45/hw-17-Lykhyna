@@ -1,0 +1,39 @@
+.footer {
+  &__wrapper {
+    padding: 30px 0 40px;
+    .top__block{
+      &__subitem {
+        address {
+          font-weight: bold;
+        }
+        li{
+          padding-left: 30px;
+          a {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+            font-size: 14px;
+          }
+        }
+      }
+      p {
+        color: $grey;
+      }
+    }
+    .bot__block {
+        ul {
+          li {
+            list-style-type: disc!important;
+            p {
+              margin: 0;
+              padding: 0 20px;
+              font-weight: bold;
+            }
+            a{
+              font-weight: bold;
+            }
+          }
+        }
+    }
+  }
+}

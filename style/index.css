@@ -351,8 +351,67 @@ nav li a:hover {
   width: 100%;
 }
 
+.publications .readmore__checker {
+  opacity: 0;
+  position: absolute;
+}
+.publications .readmore__checker:checked ~ .limit {
+  max-height: none;
+}
+.publications .readmore__checker:checked ~ .limit .grad {
+  opacity: 0;
+  transition: 0.3s;
+}
+.publications .readmore__checker:checked ~ .readmore__button {
+  cursor: pointer;
+  display: inline-block;
+  color: #777;
+  text-decoration: underline;
+}
+.publications .readmore__checker:checked ~ .readmore__button:before {
+  content: "After";
+}
+.publications .readmore__button {
+  cursor: pointer;
+  display: inline-block;
+  color: #777;
+  text-decoration: underline;
+}
+.publications .readmore__button:before {
+  content: "Defore";
+}
+.publications .limit {
+  max-height: 870px;
+  overflow: hidden;
+  position: relative;
+}
+.publications .limit .grad {
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white 60%);
+  width: 100%;
+  height: 90px;
+  opacity: 1;
+  transition: 0.3s;
+}
+.publications a {
+  text-transform: uppercase;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+}
+.publications h3 {
+  font-size: 38px;
+  font-weight: bold;
+  color: transparent;
+  background: linear-gradient(to right, #F0145A, #ee797d);
+  -webkit-background-clip: text;
+  line-height: 40px;
+  margin: 10px 0 45px;
+}
 .publications__wrapper {
   background-color: #f5f5fa;
+  padding-top: 40px;
 }
 .publications__wrapper h5 {
   color: #24a3ff;
@@ -392,6 +451,36 @@ nav li a:hover {
   background-color: #24a3ff;
   border: none;
   border-radius: 12px;
+}
+
+.footer__wrapper {
+  padding: 30px 0 40px;
+}
+.footer__wrapper .top__block__subitem address {
+  font-weight: bold;
+}
+.footer__wrapper .top__block__subitem li {
+  padding-left: 30px;
+}
+.footer__wrapper .top__block__subitem li a {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.footer__wrapper .top__block p {
+  color: #b3b3ba;
+}
+.footer__wrapper .bot__block ul li {
+  list-style-type: disc !important;
+}
+.footer__wrapper .bot__block ul li p {
+  margin: 0;
+  padding: 0 20px;
+  font-weight: bold;
+}
+.footer__wrapper .bot__block ul li a {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=index.css.map */
