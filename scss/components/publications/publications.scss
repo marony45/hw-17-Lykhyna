@@ -1,33 +1,21 @@
 .publications {
-  .readmore__checker {
-      opacity: 0;
-      position: absolute;
-    &:checked ~ {
-      .limit {
-        max-height: none;
-        .grad {
-          opacity: 0;
-          transition: 0.3s;
-        }
-      }
-      .readmore__button {
-        cursor: pointer;
-        display: inline-block;
-        color: #777;
-        text-decoration: underline;
-        &:before {
-          content: 'After';
-        }
-      }
-    }
-  }
+  position: relative;
   .readmore__button {
     cursor: pointer;
-    display: inline-block;
-    color: #777;
-    text-decoration: underline;
+    width: 250px;
+    height: 50px;
+    color: $white;
+    background-color: $blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 12px;
+    position: absolute;
+    bottom: 60px;
+    left: 520px;
     &:before {
-      content: 'Defore';
+      content: 'Ще публікації';
     }
   }
   .limit {
@@ -37,14 +25,28 @@
     .grad {
       position: absolute;
       bottom: 0;
-      background: linear-gradient(
-                      to bottom,
-                      rgb(255 255 255 / 0%),
-                      rgb(255 255 255)60%);
+      background: linear-gradient(to bottom, rgb(255 255 255 / 0%), rgb(255 255 255) 60%);
       width: 100%;
       height: 90px;
       opacity: 1;
       transition: 0.3s;
+    }
+  }
+  .readmore__checker {
+    opacity: 0;
+    position: absolute;
+  }
+  .readmore__checker:checked ~ .limit {
+    max-height: none;
+  }
+  .readmore__checker:checked ~ .grad {
+    opacity: 0;
+    transition: 0.3s;
+  }
+  .readmore__checker:checked ~ .readmore__button {
+    bottom: 0;
+    &:before {
+      content: 'Згорнути';
     }
   }
   a {
@@ -65,6 +67,9 @@
   &__wrapper {
     background-color: $lightgrey;
     padding-top: 40px;
+    .container {
+      padding: 0;
+    }
     h5 {
       color: $blue;
       font-size: 16px;
@@ -77,6 +82,7 @@
       font-weight: bold;
       margin: 10px 0 45px;
       position: relative;
+
       &:after {
         content: '';
         width: 100%;
@@ -87,29 +93,25 @@
         left: 0;
       }
     }
-    p {
 
-    }
     .row {
       div {
         img {
           width: 100%;
         }
-       .card__wrapper {
-         background-color: $white;
-         border-radius: 10px;
-         padding: 20px;
-         margin-bottom: 40px;
-       }
+
+        .card__wrapper {
+          background-color: $white;
+          border-radius: 10px;
+          padding: 20px;
+          margin-bottom: 40px;
+        }
       }
-    }
-    button {
-      width: 250px;
-      height: 50px;
-      color: $white;
-      background-color: $blue;
-      border: none;
-      border-radius: 12px;
     }
   }
 }
+
+
+
+
+

@@ -351,34 +351,26 @@ nav li a:hover {
   width: 100%;
 }
 
-.publications .readmore__checker {
-  opacity: 0;
-  position: absolute;
-}
-.publications .readmore__checker:checked ~ .limit {
-  max-height: none;
-}
-.publications .readmore__checker:checked ~ .limit .grad {
-  opacity: 0;
-  transition: 0.3s;
-}
-.publications .readmore__checker:checked ~ .readmore__button {
-  cursor: pointer;
-  display: inline-block;
-  color: #777;
-  text-decoration: underline;
-}
-.publications .readmore__checker:checked ~ .readmore__button:before {
-  content: "After";
+.publications {
+  position: relative;
 }
 .publications .readmore__button {
   cursor: pointer;
-  display: inline-block;
-  color: #777;
-  text-decoration: underline;
+  width: 250px;
+  height: 50px;
+  color: white;
+  background-color: #24a3ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 12px;
+  position: absolute;
+  bottom: 60px;
+  left: 520px;
 }
 .publications .readmore__button:before {
-  content: "Defore";
+  content: "Ще публікації";
 }
 .publications .limit {
   max-height: 870px;
@@ -393,6 +385,23 @@ nav li a:hover {
   height: 90px;
   opacity: 1;
   transition: 0.3s;
+}
+.publications .readmore__checker {
+  opacity: 0;
+  position: absolute;
+}
+.publications .readmore__checker:checked ~ .limit {
+  max-height: none;
+}
+.publications .readmore__checker:checked ~ .grad {
+  opacity: 0;
+  transition: 0.3s;
+}
+.publications .readmore__checker:checked ~ .readmore__button {
+  bottom: 0;
+}
+.publications .readmore__checker:checked ~ .readmore__button:before {
+  content: "Згорнути";
 }
 .publications a {
   text-transform: uppercase;
@@ -412,6 +421,9 @@ nav li a:hover {
 .publications__wrapper {
   background-color: #f5f5fa;
   padding-top: 40px;
+}
+.publications__wrapper .container {
+  padding: 0;
 }
 .publications__wrapper h5 {
   color: #24a3ff;
@@ -444,17 +456,13 @@ nav li a:hover {
   padding: 20px;
   margin-bottom: 40px;
 }
-.publications__wrapper button {
-  width: 250px;
-  height: 50px;
-  color: white;
-  background-color: #24a3ff;
-  border: none;
-  border-radius: 12px;
-}
 
 .footer__wrapper {
-  padding: 30px 0 40px;
+  padding: 0 0 40px;
+}
+.footer__wrapper .container {
+  border-top: 4px solid #f5f5fa;
+  padding-top: 30px;
 }
 .footer__wrapper .top__block__subitem address {
   font-weight: bold;
