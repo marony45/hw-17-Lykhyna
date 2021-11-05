@@ -65,7 +65,7 @@
     margin: 10px 0 45px;
   }
   &__wrapper {
-    background-color: $lightgrey;
+    background: linear-gradient(to top, $white, $lightgrey);
     padding-top: 40px;
     .container {
       padding: 0;

@@ -96,6 +96,7 @@ nav li a:hover {
 .homepage {
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 .homepage__wrapper {
   width: 100%;
@@ -122,6 +123,11 @@ nav li a:hover {
   text-align: center;
   color: white;
   max-width: 500px;
+}
+.homepage div a img {
+  position: absolute;
+  bottom: 20px;
+  z-index: 2;
 }
 
 .services {
@@ -419,7 +425,7 @@ nav li a:hover {
   margin: 10px 0 45px;
 }
 .publications__wrapper {
-  background-color: #f5f5fa;
+  background: linear-gradient(to top, white, #f5f5fa);
   padding-top: 40px;
 }
 .publications__wrapper .container {
